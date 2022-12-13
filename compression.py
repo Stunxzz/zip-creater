@@ -25,6 +25,10 @@ while True:
     match event:
         case"Compress":
             make_archive(filepath, folder, archive_name)
+            window['output'].update(value='Compression completed!')
+
+        case sg.WIN_CLOSED:
+            break
 
 
 
