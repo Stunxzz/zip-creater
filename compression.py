@@ -29,9 +29,9 @@ while True:
         case"Compress":
             if filepath and folder and archive_name:
                 make_archive(filepath, folder, archive_name)
-                window['output'].update(value='Compression completed!')
+                window['output'].update(value='Compression completed!',text_color='green')
             else:
-                window['output'].update(value='Invalid operation!')
+                window['output'].update(value='Invalid operation!', text_color='red')
 
         case sg.WIN_CLOSED:
             break
